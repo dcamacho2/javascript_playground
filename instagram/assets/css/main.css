@@ -1,0 +1,39 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.target {
+  border: 10px solid #fff;  
+  float: left;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+   
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+
+.target img {
+	height: 300px;
+	width: 300px;
+	-webkit-transition: all ls ease;
+	-moz-transition: all ls ease;
+	-o-transition: all ls ease;
+	-ms-transition: all ls ease;
+	transition: all ls ease;
+}
+
+.target img:hover {
+	width: 400px;
+	height: 400px;
+}
+
+h1 {
+	font-family: helvetica;
+	font-weight: 100;
+	text-align: center;
+}

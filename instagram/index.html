@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Instagram Demo</title>
+		<link rel="stylesheet" type="text/css" href="assets/main.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var tag = 'microsoft';
+				var count = '10';
+				//token taken frim instgram dev site
+				var access_token = '247948991.ab103e5.6ce0d59554204077abb6943adc607678';
+				//instagram only accepts data in JSON files
+				var access_parameters = {access_token:access_token};
+
+				//grabs images from instagram 
+				function grabImages(access_parameters) {
+					var instaURL = 'https://api.instagram.com/v1/tags/' + tag + '/media/recent?callback=?&count=' + count;
+
+					$.getJSON(instaURL, access_parameters, onDataLoaded);
+				};
+				//runs after images and data are recieved
+				function onDataLoaded(instagram_data) {
+					if (instagram_data.meta.code == 200) {
+						var photos = instagram_data.data
+						if (photos.length > 0) {
+							for (var key in photos){
+								var photo = photos[key];
+								$('#target').append('<img src="' + photo.images.standard_resolution.url + '">');
+							}
+						} else {
+							$('#target').append("Sorry. I couldn't find any pictures!");
+						}
+					} else {
+						var error = data.mete.error_message;
+						$("#target").append('Something went wrong! Here is what Instagram said: ' + error);
+					}
+				}
+				grabImages(access_parameters);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="target"></div>	
+		<h1>Instagram</h1>	
+	</body>
+</html>
