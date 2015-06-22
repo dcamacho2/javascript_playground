@@ -1,0 +1,64 @@
+body {
+	font-size: 17px;
+	font-family: 'Lato', sans-serif;
+	background-color: #01ceb8
+}
+.form {
+	background-color: #ececec;
+	padding: 30px;
+	border-radius: 5px;
+	width: 300px;
+	margin-top: 100px;
+}
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+.searchBar {
+	width: 100%;
+	background-color: #d3d3d3;
+	color: #969696;
+	border: none;
+	padding: 5px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.checkBox {
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.infoText {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.products {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-weight: lighter;
+}
+
+.prodTable {
+	width: 100%;
+}
+
+.iconContain {
+	width: 100px;
+	height: auto;
+	margin-top: -80px;
+}
+
+.company {
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 45px;
+	margin-top: 15px;
+}
