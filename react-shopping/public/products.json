@@ -1,8 +1,0 @@
-[
-	{category: "Software", price: "$490.99", stocked: true, name: "Epoch"},
-	{category: "Software", price: "$90.99", stocked: true, name: "LightSpeed"},
-	{category: "Software", price: "$290.99", stocked: false, name: "AdManager"},
-	{category: "Ads", price: "$990.99", stocked: true, name: "Pushdown"},
-	{category: "Ads", price: "$399.99", stocked: false, name: "Window"},
-	{category: "Ads", price: "$599.99", stocked: true, name: "Cube/Prism"}
-]
